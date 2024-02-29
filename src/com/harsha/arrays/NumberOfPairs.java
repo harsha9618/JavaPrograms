@@ -5,7 +5,7 @@ public class NumberOfPairs {
 	// odd,prime,palindrome
 
 	public static void main(String[] args) {
-		int pair[] = { 29, 45, 24, 16, 31, 26, 3, 34, 6, 3, 12, 14, 27, 49, 3, 25, 40, 4, 2, 32 };
+		int pair[] = { 5, 45, 24, 5, 31, 26, 3, 34, 6, 3, 12, 14, 27, 49, 3, 25, 40, 4, 2, 32 };
 		// int pair[] = { 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47 };
 		int evenSumPair = 0;
 		int oddSumPair = 0;
@@ -27,8 +27,8 @@ public class NumberOfPairs {
 				 * if(isPrime(sum)) { primePair++;
 				 * System.out.println("Prime of PAir "+pair[i]+","+pair[j] ); }
 				 */
-				// System.out.println("Even Sum Of Pairs " + evenSumPair);
-				// System.out.println("Odd Sum Of Pairs " + oddSumPair);
+				 System.out.println("Even Sum Of Pairs " + evenSumPair);
+				 System.out.println("Odd Sum Of Pairs " + oddSumPair);
 				System.out.println("Palindrome Pair" + palindromePair);
 
 				int a = pair[i] + pair[j];
@@ -42,9 +42,11 @@ public class NumberOfPairs {
 
 				}
 				if (pali == tem) {
+					System.out.println("Pairs of Palindrome : " + pair[i] + "," + pair[j] );
 					System.out.println("Palindrome");
 					palindromePair++;
 				} else {
+					System.out.println("Pairs of Palindrome : " + pair[i] + "," + pair[j] );
 					System.out.println("Not a Palindrome");
 				}
 

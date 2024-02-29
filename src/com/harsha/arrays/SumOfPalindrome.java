@@ -6,7 +6,8 @@ public class SumOfPalindrome {
 		// TODO Auto-generated method stub
 
 		// Palindromme sum
-		int pair[] = { 29, 45, 24, 16, 31, 26, 3, 34, 6, 3, 12, 14, 27, 49, 3, 25, 40, 4, 2, 32 };
+		//int pair[] = { 29, 45, 24, 16, 31, 26, 3, 34, 6, 3, 12, 14, 27, 49, 3, 25, 40, 4, 2, 32 };
+		int[] pair = { 1, 2, 3, 4, 5, 6, 7, 9 };
 		//int palindromePair = 0;
 		int r;
 		int[] temp;
@@ -23,9 +24,8 @@ public class SumOfPalindrome {
 
 				}
 				if(temp==pair) {
-					
+					System.out.println("PAirs : "+pair[i]+","+pair[i]);
 					System.out.println("palindrome");
-					 System.out.println("Prime of PAir "+pair[i]+","+pair[i]);
 					//palindromePair++;
 					
 				}else {
