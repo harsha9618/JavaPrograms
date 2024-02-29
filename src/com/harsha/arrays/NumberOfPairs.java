@@ -29,7 +29,7 @@ public class NumberOfPairs {
 				 */
 				 System.out.println("Even Sum Of Pairs " + evenSumPair);
 				 System.out.println("Odd Sum Of Pairs " + oddSumPair);
-				System.out.println("Palindrome Pair" + palindromePair);
+				System.out.println("Palindrome Pair " + palindromePair);
 
 				int a = pair[i] + pair[j];
 				int tem = a;
@@ -47,7 +47,7 @@ public class NumberOfPairs {
 					palindromePair++;
 				} else {
 					System.out.println("Pairs of Palindrome : " + pair[i] + "," + pair[j] );
-					System.out.println("Not a Palindrome");
+					System.out.println("Not a Palindrome ");
 				}
 
 				/*

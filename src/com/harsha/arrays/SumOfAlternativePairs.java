@@ -57,16 +57,16 @@ public class SumOfAlternativePairs {
 					sum = sum / 10;
 
 				}
-				j++;
+				//j++;
 				if (originalSum == reversed) {
 					System.out.println("palindrome numberpair " + arr[i] + " " + arr[j]);
 					System.out.println("Palindrome");
 					palindromeNum++;
 				} else {
-					System.out.println("Not a Palindrome number"+arr[i]+" "+arr[j]);
+					System.out.println("Not a Palindrome number"+arr[i]+" ,"+arr[j]);
 					System.out.println("Not A Palindrome");
 				}
-
+				j++;
 			}
 		}
 		System.out.println("Total palindrome pairs: " + palindromeNum);
@@ -76,9 +76,9 @@ public class SumOfAlternativePairs {
 		// TODO Auto-generated method stub
 		int[] arr = { 1, 2, 3, 4, 5, 6, 7, 9 };
 		SumOfAlternativePairs sm = new SumOfAlternativePairs();
-		/*
-		 * sm.sumOfEvenPairs(arr); sm.sumOfOddPairs(arr);
-		 */
+		
+		  sm.sumOfEvenPairs(arr); sm.sumOfOddPairs(arr);
+		 
 
 		sm.palindromeSUmPairs(arr);
 	}
