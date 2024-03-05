@@ -57,13 +57,13 @@ public class SumOfAlternativePairs {
 					sum = sum / 10;
 
 				}
-				//j++;
+				// j++;
 				if (originalSum == reversed) {
 					System.out.println("palindrome numberpair " + arr[i] + " " + arr[j]);
 					System.out.println("Palindrome");
 					palindromeNum++;
 				} else {
-					System.out.println("Not a Palindrome number"+arr[i]+" ,"+arr[j]);
+					System.out.println("Not a Palindrome number" + arr[i] + " ," + arr[j]);
 					System.out.println("Not A Palindrome");
 				}
 				j++;
@@ -72,15 +72,38 @@ public class SumOfAlternativePairs {
 		System.out.println("Total palindrome pairs: " + palindromeNum);
 	}
 
+	public static boolean verifyGivenNumberSumPrime(int a,int b) {
+		int sum=a+b;
+		int flagCount=0;
+		for(int i=1;i<=sum/2;i++) {
+			if(sum%i==0)
+				flagCount++;
+		}
+		return flagCount==1;
+
+	}
+
+	
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] arr = { 1, 2, 3, 4, 5, 6, 7, 9 };
 		SumOfAlternativePairs sm = new SumOfAlternativePairs();
-		
-		  sm.sumOfEvenPairs(arr); sm.sumOfOddPairs(arr);
-		 
-
-		sm.palindromeSUmPairs(arr);
+		for(int i=0;i<arr.length;i++) {
+			for(int j=i+1;j<arr.length;j++) {
+				boolean isPrime=verifyGivenNumberSumPrime(arr[i],arr[j]);
+				if(isPrime) {
+					System.out.println(arr[i]+" "+arr[j]+" Sum value of a Prime " +(arr[i]+arr[j]));
+				}
+				else {
+					System.out.println(arr[i]+" "+arr[j]+" Sum value of a Non Prime " +(arr[i]+arr[j]));
+				}
+			}
+		}
+		/*
+		 * sm.sumOfEvenPairs(arr); sm.sumOfOddPairs(arr); sm.palindromeSUmPairs(arr);
+		 */
+		// sm.isPrimeSumOfPair(arr);
 	}
 
 }

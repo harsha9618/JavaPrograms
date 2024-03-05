@@ -4,23 +4,22 @@ public class BinarySearchSortingMethod {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int array[] = { 1, 2, 8, 88, 74, 4, 5, 6, 7 };
-		int Find = 88;
+		String[] array = { "a","z","r","g" };
+		String target = "g";
 		BinarySearchSortingMethod bs = new BinarySearchSortingMethod();
-		bs.Sort(array);
-		boolean res = bs.binarySerching(array, Find);
-		System.out.println();
-
-		if (res == true) {
-			System.out.println("Does  exists");
-		} else {
-			System.out.println("Does not  exists");
-		}
+		bs.equals(target);
+		// String target = "abcde"; // String to search for
+	        int binaryResult = binarySerching(array, target);
+	        if (binaryResult != -1) {
+	            System.out.println("Binary Search: String found at index " + binaryResult);
+	        } else {
+	            System.out.println("Binary Search: String not found");
+	        }
 	}
 
 	public void Sort(int[] array) {
 		int n = array.length;
-		int tem = 0;
+		//int tem = 0;
 		for (int i = 0; i < n - 1; i++) {
 			for (int j = 0; j < n - 1; j++) {
 				if (array[j] > array[j + 1]) {
@@ -33,8 +32,8 @@ public class BinarySearchSortingMethod {
 		}
 	}
 
-	public boolean binarySerching(int[] array, int Find) {
-
+	public static int binarySerching(String[] array, String target) {
+		//This is binaray search
 		Boolean flag = false;
 		// Find=88;
 		int lower = 0;
@@ -43,19 +42,20 @@ public class BinarySearchSortingMethod {
 
 		while (lower <= higher) {
 			int mid = (lower + higher) / 2;
-			int key = array[mid];
-			if (Find == key) {
-				flag = true;
-				break;
+			int key = array[mid].compareTo(target);
+			if (key == 0) {
+				return mid;
+				
+				
 			}
-			if (Find < key) {
+			else if (key <0) {
 				lower = mid + 1;
 			}
-			if (Find > key) {
+			else  {
 				higher = mid - 1;
 			}
 		}
-		return flag;
+		return -1;
 
 	}
 

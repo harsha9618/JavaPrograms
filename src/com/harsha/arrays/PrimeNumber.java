@@ -18,7 +18,7 @@ public class PrimeNumber {
 			if (count == 2) {
 				System.out.println("Prime Number");
 			} else {
-				System.out.println("Not aa Prime Number");
+				System.out.println("Not a Prime Number");
 			}
 		}
 
