@@ -6,7 +6,7 @@ public class SumOfAlternativePairs {
 		// int length=arr.length;
 		int sum = 0;
 		int evenCount = 0;
-		int oddCount = 0;
+		//int oddCount = 0;
 
 		for (int i = 0; i <= arr.length - 1; i++) {
 			for (int j = 1; j <= arr.length - 1; j++) {
@@ -85,6 +85,7 @@ public class SumOfAlternativePairs {
 
 	
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] arr = { 1, 2, 3, 4, 5, 6, 7, 9 };

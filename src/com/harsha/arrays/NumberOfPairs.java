@@ -4,6 +4,7 @@ public class NumberOfPairs {
 	// Finding the values of pairs that given sum values is even,
 	// odd,prime,palindrome
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		int pair[] = { 5, 45, 24, 5, 31, 26, 3, 34, 6, 3, 12, 14, 27, 49, 3, 25, 40, 4, 2, 32 };
 		// int pair[] = { 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47 };

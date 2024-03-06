@@ -2,6 +2,7 @@ package com.harsha.arrays;
 
 public class BinarySearchSortingMethod {
 
+	@SuppressWarnings("unlikely-arg-type")
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String[] array = { "a","z","r","g" };
@@ -32,6 +33,7 @@ public class BinarySearchSortingMethod {
 		}
 	}
 
+	@SuppressWarnings("unused")
 	public static int binarySerching(String[] array, String target) {
 		//This is binaray search
 		Boolean flag = false;

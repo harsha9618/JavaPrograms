@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class MatrixMultiplication {
 
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int row1, col1, row2, col2;

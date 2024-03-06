@@ -1,6 +1,7 @@
 package com.harsha.arrays;
 
 public class PrimeNumbers {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 	int  prime[] = {5,12,18,23,17,45,93,62,7,54,2};
 	int i=0;
